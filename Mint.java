@@ -5,8 +5,16 @@ abstract class Mint {
 
     abstract void imprint();
 
-    abstract void polish();
+    public void smooth() {
 
-    abstract void inspect();
+    }
+    
+    public void polish() {
+
+    }
+
+    public void inspect() {
+
+    }
 
 }
