@@ -2,20 +2,12 @@
 abstract class Coin {
     private String cc;
     private String commonName;
-    private double denomination;
+    private double value;
 
-    public String countryCode()
-    {
-        return cc;
-    }
-    public String commonName()
-    {
-        return commonName;
-    }
-
-    public double value()
-    {
-        return denomination;
+    public Coin(String cc, String commonName, Double value) {
+        this.cc = cc;
+        this.commonName = commonName;
+        this.value = value;
     }
 }
 
