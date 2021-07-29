@@ -1,14 +1,14 @@
-public class CADmint {
+public class CADmint extends Mint {
     private static CADmint uniqueInstance;
     private Coin coin;
  
     private CADmint() {}
  
-    public static CADmint. getInstance() {
+    public static CADmint getInstance() {
         if (uniqueInstance == null) {
-            synchronized (CADmint..class) {
+            synchronized (CADmint.class) {
                 if (uniqueInstance == null) {
-                    uniqueInstance = new CADmint.();
+                    uniqueInstance = new CADmint();
                 }
             }
         }
@@ -21,10 +21,10 @@ public class CADmint {
         smelt(coin);
 
         // Step #2 Imprinting
-        imprint(coin)
+        imprint(coin);
 
         // Step #3 Inspecting
-        if inspect() {
+        if (inspect()) {
             System.out.println("Inspecting " + coin.getCoinName() + "...completed");
         }
         else {
@@ -33,7 +33,7 @@ public class CADmint {
         }
 
         // Step #4 Smoothing
-        if smooth() {
+        if (smooth()) {
             System.out.println("Smoothing " + coin.getCoinName() + "...completed");
         } 
         else {
@@ -42,7 +42,7 @@ public class CADmint {
         }
 
         // Step #5 Polish
-        if polish() {
+        if (polish()) {
             System.out.println("Smoothing " + coin.getCoinName() + "...completed");
         } 
         else {

@@ -1,4 +1,4 @@
-public class USDmint {
+public class USDmint extends Mint {
     private static USDmint uniqueInstance;
     private Coin coin;
  
@@ -21,10 +21,10 @@ public class USDmint {
         smelt(coin);
 
         // Step #2 Imprinting
-        imprint(coin)
+        imprint(coin);
 
         // Step #3 Inspecting
-        if inspect() {
+        if (inspect()) {
             System.out.println("Inspecting " + coin.getCoinName() + "...completed");
         }
         else {
@@ -33,7 +33,7 @@ public class USDmint {
         }
 
         // Step #4 Smoothing
-        if smooth() {
+        if (smooth()) {
             System.out.println("Smoothing " + coin.getCoinName() + "...completed");
         } 
         else {
@@ -42,7 +42,7 @@ public class USDmint {
         }
 
         // Step #5 Polish
-        if polish() {
+        if (polish()) {
             System.out.println("Smoothing " + coin.getCoinName() + "...completed");
         } 
         else {
