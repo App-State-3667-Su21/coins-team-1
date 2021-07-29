@@ -9,5 +9,9 @@ abstract class Coin {
         this.commonName = commonName;
         this.value = value;
     }
+
+    public String getCoinName() {
+        return commonName;
+    }
 }
 
