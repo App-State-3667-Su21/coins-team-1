@@ -49,6 +49,8 @@ public class USDmint {
             System.out.println("Smoothing failed...");
             return null;
         }
+
+        return coin;
     }
 
     public void smelt(Coin coin) {
