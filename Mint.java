@@ -6,9 +6,9 @@ abstract class Mint {
     
     public abstract Coin makeCoin(double value);
 
-    abstract void smelt();
+    abstract void smelt(Coin coin);
 
-    abstract void imprint();
+    abstract void imprint(Coin coin);
 
     public boolean smooth() {
         randomNum = rand.nextInt(1000);
