@@ -1,19 +1,7 @@
 public class USDmint extends Mint {
-    private static USDmint uniqueInstance;
     private Coin coin;
  
-    private USDmint() {}
- 
-    public static USDmint getInstance() {
-        if (uniqueInstance == null) {
-            synchronized (USDmint.class) {
-                if (uniqueInstance == null) {
-                    uniqueInstance = new USDmint();
-                }
-            }
-        }
-        return uniqueInstance;
-    }
+    public USDmint() {}
 
     public Coin makeCoin(double value) {
         coin = determineCoin(value);
