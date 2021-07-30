@@ -5,6 +5,9 @@ compile: Coin.java \
 	Penny.java PennyTest.java \
 	USDime.java USDimeTest.java \
 	USNickel.java USNickelTest.java \
+	USQuarter.java USQuarterTest.java \
+	HalfDollar.java HalfDollarTest.java \
+	Dollar.java DollarTest.java \
 	$(JUNIT5_JAR)
 	@echo "Compiling..."
 	javac -cp .:$(JUNIT5_JAR) *.java
