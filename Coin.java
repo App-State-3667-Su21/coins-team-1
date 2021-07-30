@@ -16,8 +16,15 @@ abstract class Coin {
         return commonName;
     }
 
+    public String getCoinCC() {
+        return cc;
+    }
+
+    public double getCoinValue() {
+        return value;
+    }
+
     public String smelt() {
         return smeltBehavior.smelt();
     }
 }
-
