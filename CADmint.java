@@ -1,19 +1,7 @@
 public class CADmint extends Mint {
-    private static CADmint uniqueInstance;
     private Coin coin;
  
-    private CADmint() {}
- 
-    public static CADmint getInstance() {
-        if (uniqueInstance == null) {
-            synchronized (CADmint.class) {
-                if (uniqueInstance == null) {
-                    uniqueInstance = new CADmint();
-                }
-            }
-        }
-        return uniqueInstance;
-    }
+    public CADmint() {}
 
     public Coin makeCoin(double value) {
         coin = determineCoin(value);

@@ -15,6 +15,7 @@ compile: Coin.java \
 	Loonie.java LoonieTest.java \
 	Toonie.java ToonieTest.java \
 	USDmint.java USDmintTest.java \
+	CADmint.java CADmintTest.java \
 	$(JUNIT5_JAR)
 	@echo "Compiling..."
 	javac -cp .:$(JUNIT5_JAR) *.java
