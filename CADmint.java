@@ -54,7 +54,7 @@ public class CADmint extends Mint {
     }
 
     public void smelt(Coin coin) {
-        System.out.println("Smelting " + coin.getCoinName() + "...completed");
+        System.out.println("Smelting " + coin.getCoinName() + coin.smelt() + "...completed");
     }
 
     public void imprint(Coin coin) {

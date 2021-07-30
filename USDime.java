@@ -1,5 +1,5 @@
 public class USDime extends Coin {
     public USDime() {
-        super("USD", "Dime", 0.1);
+        super("USD", "Dime", 0.1, new HighQualitySmelt());
     }
 }

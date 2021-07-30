@@ -3,15 +3,21 @@ abstract class Coin {
     private String cc;
     private String commonName;
     private double value;
+    private SmeltBehavior smeltBehavior;
 
-    public Coin(String cc, String commonName, Double value) {
+    public Coin(String cc, String commonName, Double value, SmeltBehavior smeltBehavior) {
         this.cc = cc;
         this.commonName = commonName;
         this.value = value;
+        this.smeltBehavior = smeltBehavior;
     }
 
     public String getCoinName() {
         return commonName;
+    }
+
+    public String smelt() {
+        return smeltBehavior.smelt();
     }
 }
 
