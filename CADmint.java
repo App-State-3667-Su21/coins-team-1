@@ -1,7 +1,7 @@
 public class CADmint extends Mint {
     private Coin coin;
  
-    private CADmint() {}
+    public CADmint() {}
 
     public Coin makeCoin(double value) {
         coin = determineCoin(value);

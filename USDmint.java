@@ -1,7 +1,7 @@
 public class USDmint extends Mint {
     private Coin coin;
  
-    private USDmint() {}
+    public USDmint() {}
 
     public Coin makeCoin(double value) {
         coin = determineCoin(value);
