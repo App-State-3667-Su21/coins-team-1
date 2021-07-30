@@ -3,6 +3,7 @@ JUNIT5_RUNNER = org.junit.platform.console.ConsoleLauncher
 
 compile: Coin.java \
 	Penny.java PennyTest.java \
+	USDime.java USDimeTest.java \
 	$(JUNIT5_JAR)
 	@echo "Compiling..."
 	javac -cp .:$(JUNIT5_JAR) *.java
