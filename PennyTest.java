@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 public class PennyTest {
     
     @Test
-    public void TestPennyConstructor() {
+    public void TestConstructor() {
         try {
             Penny p = new Penny();
             assertNotNull(p);
@@ -21,7 +21,7 @@ public class PennyTest {
     }
 
     @Test
-    public void TestPennyName() {
+    public void TestCoinName() {
 
 	Penny p = new Penny();
 	String expectedResult = "Penny";
@@ -31,8 +31,9 @@ public class PennyTest {
 		   "Expected:'" + expectedResult 
 		   + "' but got '" + testOutput + "'.");
     }
-
-    public void TestPennyValue() {
+    
+    @Test
+    public void TestCoinValue() {
 
         Penny p = new Penny();
         double expectedResult = 0.01;
@@ -43,14 +44,15 @@ public class PennyTest {
                + "' but got '" + testOutput + "'.");
         }
 
-    public void TestPennyMint() {
+    @Test
+    public void TestCoinMint() {
 
         Penny p = new Penny();
         String expectedResult = "USD";
         String testOutput = null;
-        testOutput = p.getCoinCommonName();
+        testOutput = p.getCoinCC();
         assertTrue(expectedResult.equals(testOutput),
-            "Expected:'" + expectedResult 
-            "' but got '" + testOutput + "'.");
+                "Expected:'" + expectedResult 
+                + "' but got '" + testOutput + "'.");
         }
 }

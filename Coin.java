@@ -19,8 +19,8 @@ abstract class Coin {
         return commonName;
     }
 
-    public String getCoinCommonName() {
-        return commonName;
+    public String getCoinCC() {
+        return cc;
     }
 
     public double getCoinValue() {
