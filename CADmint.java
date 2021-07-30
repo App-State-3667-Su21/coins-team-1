@@ -1,9 +1,9 @@
 public class CADmint extends Mint {
-    private static CADmint uniqueInstance;
     private Coin coin;
+    private static CADmint uniqueInstance;
  
     private CADmint() {}
- 
+
     public static CADmint getInstance() {
         if (uniqueInstance == null) {
             synchronized (CADmint.class) {
@@ -13,7 +13,7 @@ public class CADmint extends Mint {
             }
         }
         return uniqueInstance;
-    }
+    }    
 
     public Coin makeCoin(double value) {
         coin = determineCoin(value);

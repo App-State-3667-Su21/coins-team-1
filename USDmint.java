@@ -1,7 +1,7 @@
 public class USDmint extends Mint {
-    private static USDmint uniqueInstance;
     private Coin coin;
- 
+    private static USDmint uniqueInstance;
+
     private USDmint() {}
  
     public static USDmint getInstance() {
