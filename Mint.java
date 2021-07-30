@@ -12,35 +12,20 @@ abstract class Mint {
 
     public boolean smooth() {
         randomNum = rand.nextInt(1000);
-        
-        System.out.print("Smoothing coin...");
-
         return checkFail(randomNum);
     }
     
     public boolean polish() {
         randomNum = rand.nextInt(1000);
-        
-        System.out.print("Polishing coin...");
-
         return checkFail(randomNum);
     }
 
     public boolean inspect() {
         randomNum = rand.nextInt(12);
-        
-        System.out.print("Inspecting coin...");
-
         return checkFail(randomNum);
     }
 
     private boolean checkFail(int num) {
-        if (num == 1) {
-            System.out.println(" Failed.");
-            return false;
-        } else {
-            System.out.println(" Completed.");
-            return true;
-        }
+        return (num != 1);
     }
 }
