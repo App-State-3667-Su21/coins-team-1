@@ -55,7 +55,7 @@ public class USDmintTest {
 
     mint.smelt(coin);
     String actualOutput = breakdownOut();
-	String expectedResult = "Smelting " + coin.getCoinName() + "...completed\n";
+	String expectedResult = "Smelting Quarter 91.67% Cu and 8.33% Zi...completed\n";
 
     assertEquals(expectedResult, actualOutput);
 	// String testOutput = null;

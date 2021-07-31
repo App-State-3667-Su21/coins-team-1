@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class XxxCoin extends Coin {
     public XxxCoin(String cc, String commonName, Double value) {
-        super(cc,commonName,value); 
+        super(cc,commonName,value, new LowQualitySmelt()); 
     }
     public String getCoinName(){return "";}
     public String getCoinCC(){return "";}
