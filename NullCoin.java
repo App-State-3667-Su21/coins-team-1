@@ -15,5 +15,7 @@ public class NullCoin extends Coin{
         // TODO Auto-generated method stub
         return "Null Coin";
     }
+
+    public static Coin NULL = new NullCoin();
     
 }

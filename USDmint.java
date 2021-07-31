@@ -29,7 +29,7 @@ public class USDmint extends Mint {
         }
         else {
             System.out.println("Inspection failed...");
-            return null;
+            return NullCoin.NULL;
         }
 
         // Step #4 Smoothing
@@ -38,7 +38,8 @@ public class USDmint extends Mint {
         } 
         else {
             System.out.println("Smoothing failed...");
-            return null;
+            
+            return NullCoin.NULL;
         }
 
         // Step #5 Polish
@@ -47,7 +48,7 @@ public class USDmint extends Mint {
         } 
         else {
             System.out.println("Smoothing failed...");
-            return null;
+            return NullCoin.NULL;
         }
 
         return coin;
@@ -62,12 +63,16 @@ public class USDmint extends Mint {
     }
 
     private Coin determineCoin(double value) {
+
         if (value == 0.01) return new Penny();
         else if (value == 0.05) return new USNickel();
         else if (value == 0.10) return new USDime();
         else if (value == 0.25) return new USQuarter();
         else if (value == 0.50) return new HalfDollar();
         else if (value == 1.00) return new Dollar();
-        else return null;
+        else {
+            new NullCoin();
+            return NullCoin.NULL;
+        }
     }
 }
