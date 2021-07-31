@@ -14,6 +14,7 @@ compile: Coin.java \
 	FiftyCent.java FiftyCentTest.java \
 	Loonie.java LoonieTest.java \
 	Toonie.java ToonieTest.java \
+	NullCoin.java NullCoinTest.java \
 	USDmint.java USDmintTest.java \
 	CADmint.java CADmintTest.java \
 	Mint.java mintTest.java \
