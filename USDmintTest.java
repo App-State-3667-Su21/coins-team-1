@@ -32,7 +32,7 @@ public class USDmintTest {
     public void TestMakeCoin() {
 
     // Coin coin = new xxCoin();
-    USDmint mint = new USDmint();
+    USDmint mint = USDmint.getInstance();
     // USQuarter Qcoin = new USQuarter();
     // double coin = 0.25; 
 
@@ -48,7 +48,7 @@ public class USDmintTest {
     public void TestSmelt() {
 
     // Coin coin = new xxCoin();
-    USDmint mint = new USDmint();
+    USDmint mint = USDmint.getInstance();
     USQuarter coin = new USQuarter();
     setUpOut(); 
     // double coin = 0.25; 
@@ -69,7 +69,7 @@ public class USDmintTest {
     public void TestImprint() {
 
     // Coin coin = new xxCoin();
-    USDmint mint = new USDmint();
+    USDmint mint = USDmint.getInstance();
     USQuarter coin = new USQuarter();
     setUpOut(); 
     // double coin = 0.25; 
