@@ -17,6 +17,7 @@ public class HighQualitySmeltTest {
         } catch (Exception e) {
             
             fail("Error occured upon the constructor!: " + e.getLocalizedMessage());
+        }
         
     }
 
