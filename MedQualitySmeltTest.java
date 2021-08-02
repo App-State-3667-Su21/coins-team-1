@@ -13,7 +13,7 @@ public class MedQualitySmeltTest {
 
         try {            
             mqsObj = new LowQualitySmelt();
-            asserNotNull(mqsObj);
+            assertNotNull(mqsObj);
         } catch (Exception e) {
             
             fail("Error occured upon the constructor!: " + e.getLocalizedMessage());
@@ -22,7 +22,7 @@ public class MedQualitySmeltTest {
 
     public void TestSmeltBehavior()
     {
-        String expectedResult = " 2.5% Cu and 97.5% Zi";
+        String expectedResult = " 75% Cu and 25% Zi";
         String actualResult = mqsObj.smelt();
         assertTrue(expectedResult.equals(actualResult),
         "Expected: '" + expectedResult + "' but got'" + actualResult + "''.");

@@ -5,15 +5,15 @@ import java.io.ByteArrayOutputStream;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class LowQualitySmeltTest {
-    LowQualitySmelt lqsObj = null;
+public class HighestQualitySmeltTest {
+    HighestQualitySmelt hqsObj = null;
     @Test
     public void TestConstructor()
     {
 
         try {            
-            lqsObj = new LowQualitySmelt();
-            assertNotNull(lqsObj);
+            hqsObj = new HighestQualitySmelt();
+            assertNotNull(hqsObj);
         } catch (Exception e) {
             
             fail("Error occured upon the constructor!: " + e.getLocalizedMessage());
@@ -22,8 +22,8 @@ public class LowQualitySmeltTest {
 
     public void TestSmeltBehavior()
     {
-        String expectedResult = " 2.5% Cu and 97.5% Zi";
-        String actualResult = lqsObj.smelt();
+        String expectedResult = " 88.5% Cu, 6% Zi, 3.5% Mn, and 2% Ni";
+        String actualResult = hqsObj.smelt();
         assertTrue(expectedResult.equals(actualResult),
         "Expected: '" + expectedResult + "' but got'" + actualResult + "''.");
     }
