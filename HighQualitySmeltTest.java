@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 public class HighQualitySmeltTest {
-    LowQualitySmelt hqsObj = null;
+    HighQualitySmelt hqsObj = null;
     @Test
     public void TestConstructor()
     {
 
         try {            
-            hqsObj = new LowQualitySmelt();
+            hqsObj = new HighQualitySmelt();
             assertNotNull(hqsObj);
         } catch (Exception e) {
             
@@ -24,6 +24,7 @@ public class HighQualitySmeltTest {
     @Test
     public void TestSmeltBehavior()
     {
+        hqsObj = new HighQualitySmelt();
         String expectedResult = " 91.67% Cu and 8.33% Zi";
         String actualResult = hqsObj.smelt();
         assertTrue(expectedResult.equals(actualResult),
