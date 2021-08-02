@@ -28,4 +28,7 @@ clean:
 	rm -f *.class
 
 test: $(JUNIT5_JAR)
-	java -cp .:$(JUNIT5_JAR) $(JUNIT5_RUNNER) --scan-class-path 
+	java -cp .:$(JUNIT5_JAR) $(JUNIT5_RUNNER) --scan-class-path
+
+demo: 
+	java Demo
