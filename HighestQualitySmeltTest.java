@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class HighestQualitySmeltTest {
     HighestQualitySmelt hqsObj = null;
+
     @Test
     public void TestConstructor()
     {
@@ -23,6 +24,7 @@ public class HighestQualitySmeltTest {
     @Test
     public void TestSmeltBehavior()
     {
+        hqsObj = new HighestQualitySmelt();
         String expectedResult = " 88.5% Cu, 6% Zi, 3.5% Mn, and 2% Ni";
         String actualResult = hqsObj.smelt();
         assertTrue(expectedResult.equals(actualResult),

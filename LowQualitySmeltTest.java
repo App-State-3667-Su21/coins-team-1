@@ -23,6 +23,7 @@ public class LowQualitySmeltTest {
     @Test
     public void TestSmeltBehavior()
     {
+        lqsObj = new LowQualitySmelt();
         String expectedResult = " 2.5% Cu and 97.5% Zi";
         String actualResult = lqsObj.smelt();
         assertTrue(expectedResult.equals(actualResult),
