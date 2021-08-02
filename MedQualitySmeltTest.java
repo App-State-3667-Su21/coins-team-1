@@ -20,6 +20,7 @@ public class MedQualitySmeltTest {
         }
     }
 
+    @Test
     public void TestSmeltBehavior()
     {
         String expectedResult = " 75% Cu and 25% Zi";

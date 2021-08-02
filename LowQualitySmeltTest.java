@@ -20,6 +20,7 @@ public class LowQualitySmeltTest {
         }
     }
 
+    @Test
     public void TestSmeltBehavior()
     {
         String expectedResult = " 2.5% Cu and 97.5% Zi";

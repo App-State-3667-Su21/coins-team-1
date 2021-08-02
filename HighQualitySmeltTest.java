@@ -21,6 +21,7 @@ public class HighQualitySmeltTest {
         
     }
 
+    @Test
     public void TestSmeltBehavior()
     {
         String expectedResult = " 91.67% Cu and 8.33% Zi";

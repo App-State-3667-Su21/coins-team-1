@@ -32,7 +32,7 @@ public class CADmintTest {
     public void TestMakeCoin() {
 
     // Coin coin = new xxCoin();
-    CADmint mint = new CADmint();
+    CADmint mint = CADmint.getInstance();
     // USQuarter Qcoin = new USQuarter();
     // double coin = 0.25; 
 
@@ -48,14 +48,14 @@ public class CADmintTest {
     public void TestSmelt() {
 
     // Coin coin = new xxCoin();
-    CADmint mint = new CADmint();
+    CADmint mint = CADmint.getInstance();
     CADQuarter coin = new CADQuarter();
     setUpOut(); 
     // double coin = 0.25; 
 
     mint.smelt(coin);
     String actualOutput = breakdownOut();
-	String expectedResult = "Smelting " + coin.getCoinName() + "...completed\n";
+	String expectedResult = "Smelting Quarter 91.67% Cu and 8.33% Zi...completed\n";
 
     assertEquals(expectedResult, actualOutput);
     }
@@ -64,7 +64,7 @@ public class CADmintTest {
     public void TestImprint() {
 
     // Coin coin = new xxCoin();
-    CADmint mint = new CADmint();
+    CADmint mint = CADmint.getInstance();
     CADQuarter coin = new CADQuarter();
     setUpOut(); 
     // double coin = 0.25; 
